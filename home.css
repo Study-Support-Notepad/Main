@@ -1,0 +1,10 @@
+.root {
+  -fx-background-color: white;
+}
+.homehedder{
+  -fx-background-color: #2EC4FF;
+}
+.button{
+  -fx-background-color: #2EC4FF;
+  -fx-border-radius:30px;
+}
