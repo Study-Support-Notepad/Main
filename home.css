@@ -1,10 +1,4 @@
-.root {
-  -fx-background-color: white;
-}
-.homehedder{
-  -fx-background-color: #2EC4FF;
-}
-.button{
-  -fx-background-color: #2EC4FF;
-  -fx-border-radius:30px;
-}
+.background {
+    -fx-background-image: url("images/loginlogo.png");
+    -fx-background-size: cover;
+  }
