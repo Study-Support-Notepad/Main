@@ -1,0 +1,58 @@
+.background {
+    -fx-background-color:#FFFEEB;
+  }
+.frame{
+    -fx-border-color:#1B1464;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-color: #FFFFFF;
+}
+.qmemoframe{
+    -fx-border-color:#1B1464;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("images/qmemo.png");
+   -fx-background-size: 100%;
+       -fx-background-repeat: no-repeat;
+}
+.amemoframe{
+    -fx-border-color:#1B1464;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("images/amemo.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+}
+.toku{
+    -fx-border-color:#1B1464;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("images/toku.png");
+    -fx-background-size: 100%;
+        -fx-background-repeat: no-repeat;
+}
+.akaibu{
+    -fx-border-color:#1B1464;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("images/akaibu.png");
+   -fx-background-size: 100%;
+       -fx-background-repeat: no-repeat;
+}
+.menubutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#1B1464;
+}
+.menubutton2{
+    -fx-background-radius:30px;
+    -fx-background-color:#2EC4FF;
+}
+.modoru{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:20px;
+}
