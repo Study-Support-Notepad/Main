@@ -13,7 +13,7 @@
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
-    -fx-background-image: url("images/qmemo.png");
+    -fx-background-image: url("../images/qmemo.png");
    -fx-background-size: 100%;
        -fx-background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
-    -fx-background-image: url("images/amemo.png");
+    -fx-background-image: url("../images/amemo.png");
     -fx-background-size: 100%;
     -fx-background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
-    -fx-background-image: url("images/toku.png");
+    -fx-background-image: url("../images/toku.png");
     -fx-background-size: 100%;
         -fx-background-repeat: no-repeat;
 }
@@ -40,7 +40,7 @@
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
-    -fx-background-image: url("images/akaibu.png");
+    -fx-background-image: url("../images/akaibu.png");
    -fx-background-size: 100%;
        -fx-background-repeat: no-repeat;
 }
@@ -54,5 +54,9 @@
 }
 .modoru{
     -fx-background-color:#FFFFFF;
+    -fx-background-radius:20px;
+}
+.modoru:hover{
+    -fx-background-color:FFFF00;
     -fx-background-radius:20px;
 }
