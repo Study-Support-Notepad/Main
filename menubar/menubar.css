@@ -1,0 +1,40 @@
+.menubutton{
+        -fx-background-radius:30px;
+        -fx-background-color:#96E1FF;
+         }
+.menubutton:hover{
+        -fx-background-color:#0C6CCC;
+         }
+.setteibutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconsettei.png");
+    -fx-background-size: 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.setteibutton:hover{
+    -fx-background-color:FFFF00;
+}
+.kousinbutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconkousin.png");
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.kousinbutton:hover{
+    -fx-background-color:FFFF00;
+}
+.helpbutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconhelp.png");
+    -fx-background-size: 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.helpbutton:hover{
+    -fx-background-color:FFFF00;
+}
