@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane maxHeight="1.7976931348623157E308" maxWidth="120.0" minHeight="-Infinity" minWidth="120.0" prefHeight="200.0" prefWidth="120.0" style="-fx-background-color: #1b1464#1b1464;" stylesheets="@menubar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="120.0" minHeight="-Infinity" minWidth="120.0" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: #1b1464#1b1464;" stylesheets="@menubar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+      <VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="120.0">
          <children>
             <Button alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="111.0" styleClass="menubutton" text="メニューに戻る" textFill="#1b1464">
                <font>
@@ -19,7 +18,7 @@
                   <Insets left="5.0" top="10.0" />
                </VBox.margin>
             </Button>
-            <VBox maxWidth="120.0" minHeight="50.0" minWidth="120.0" prefWidth="120.0">
+            <VBox maxWidth="120.0" minHeight="50.0" minWidth="120.0" prefHeight="165.0" prefWidth="120.0">
                <children>
                   <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="setteibutton" textFill="#1b1464">
                      <font>
@@ -57,6 +56,12 @@
                </VBox.margin>
             </VBox>
          </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
       </VBox>
    </children>
 </StackPane>
