@@ -24,7 +24,7 @@
     -fx-background-radius:20px;
 }
 .modoru:hover{
-    -fx-background-color:FFFF00;
+    -fx-background-color:#FFFF00;
     -fx-background-radius:20px;
 }
 .button2{
@@ -35,3 +35,19 @@
     -fx-background-radius:30px;
     -fx-background-color:#0C6CCC;
 }
+.mini{
+    -fx-background-radius:12px;
+    -fx-background-color:#96E1FF;
+}
+.mini:hover{
+    -fx-background-radius:12px;
+    -fx-background-color:#0C6CCC;
+}
+.toziru{
+           -fx-background-radius:12px;
+           -fx-background-color:#FFFF00;
+       }
+.toziru:hover{
+           -fx-background-radius:12px;
+           -fx-background-color:#FFCE00;
+       }
