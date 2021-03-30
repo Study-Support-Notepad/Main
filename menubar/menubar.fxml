@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="1.7976931348623157E308" maxWidth="120.0" minHeight="-Infinity" minWidth="120.0" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: #1b1464#1b1464;" stylesheets="@menubar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane style="-fx-background-color: #1b1464#1b1464;" stylesheets="@menubar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="120.0">
          <children>

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@home.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@home.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Login">
    <children>
       <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
          <StackPane.margin>
@@ -24,15 +24,15 @@
                </opaqueInsets>
                <children>
                   <Label text="Email" textFill="WHITE" />
-                  <TextField prefHeight="27.0" prefWidth="223.0" promptText="Email" />
+                  <TextField fx:id="email" prefHeight="27.0" prefWidth="223.0" promptText="Email" />
                   <Label text="Password" textFill="WHITE" />
-                  <PasswordField prefHeight="27.0" prefWidth="223.0" promptText="Password" />
-                  <Hyperlink prefHeight="3.0" prefWidth="184.0" text="パスワードを忘れた場合" textFill="#dadada">
+                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="Password" />
+                  <Hyperlink onAction="#forgotPassword" prefHeight="3.0" prefWidth="184.0" text="パスワードを忘れた場合" textFill="#dadada">
                      <VBox.margin>
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Hyperlink>
-                  <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="49.0" prefWidth="223.0" style="-fx-background-color: #2EC4FF;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="loginButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="49.0" prefWidth="223.0" style="-fx-background-color: #2EC4FF;" text="Login" textAlignment="CENTER" textFill="WHITE">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
@@ -40,7 +40,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Hyperlink prefHeight="25.0" prefWidth="189.0" text="新規アカウントを作成" textFill="#dadada">
+                  <Hyperlink onAction="#createAccount" prefHeight="25.0" prefWidth="189.0" text="新規アカウントを作成" textFill="#dadada">
                      <VBox.margin>
                         <Insets left="20.0" />
                      </VBox.margin>
