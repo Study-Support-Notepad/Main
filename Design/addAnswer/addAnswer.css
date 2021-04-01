@@ -1,8 +1,8 @@
 .background {
-    -fx-background-color:#FFFEEB;
+    -fx-background-color:#D8FFFB;
   }
 .frame{
-    -fx-border-color:#1B1464;
+    -fx-border-color: #14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
