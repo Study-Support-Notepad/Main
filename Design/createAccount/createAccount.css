@@ -1,33 +1,10 @@
 .background {
-    -fx-background-color:#FFFEEB;
+    -fx-background-image: url("../images/loginlogo.png");
+    -fx-background-size: cover;
   }
-.frame{
-    -fx-border-color:#1B1464;
-    -fx-border-width:6px;
-    -fx-background-radius:30px;
-    -fx-border-radius:30px;
-    -fx-background-color: #FFFFFF;
-}
-
-.button{
-    -fx-background-radius:30px;
-    -fx-background-color:#2EC4FF;
-}
+ .button{
+  -fx-background-color: #2EC4FF;
+  }
 .button:hover{
-    -fx-background-radius:30px;
-    -fx-background-color:#0C6CCC;
+-fx-background-color:#0C6CCC;
 }
-
-
-.modoru{
-    -fx-background-color:#FFFFFF;
-    -fx-background-radius:20px;
-}
-.modoru:hover{
-    -fx-background-color:FFFF00;
-    -fx-background-radius:20px;
-}
-.link{
-   -fx-text-fill:2EC4FF;
-}
-
