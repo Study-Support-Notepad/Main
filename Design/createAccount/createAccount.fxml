@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@createAccount.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Login">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@createAccount.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateAccount">
    <children>
       <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
          <StackPane.margin>
@@ -28,20 +28,20 @@
                   <Label text="Email" textFill="WHITE" />
                   <TextField fx:id="email" prefHeight="27.0" prefWidth="223.0" promptText="Email" />
                   <Label text="Name" textFill="WHITE" />
-                  <TextField fx:id="email2" prefHeight="27.0" prefWidth="223.0" promptText="User name" />
+                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" />
                   <Label text="Password" textFill="WHITE" />
-                  <TextField fx:id="email1" prefHeight="27.0" prefWidth="223.0" promptText="New Password" />
-                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" />
+                  <TextField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password" />
+                  <PasswordField fx:id="passwordCheck" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" />
                   <CheckBox mnemonicParsing="false" text="に同意" textFill="WHITE">
                      <graphic>
-                        <Hyperlink styleClass="link" text="利用規約" textFill="#70fffa">
+                        <Hyperlink fx:id="termsCheck" onAction="#onLink" styleClass="link" text="利用規約" textFill="#70fffa">
                            <font>
                               <Font size="12.0" />
                            </font>
                         </Hyperlink>
                      </graphic>
                   </CheckBox>
-                  <Button fx:id="loginButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="49.0" prefWidth="223.0" stylesheets="@createAccount.css" text="新規作成" textAlignment="CENTER" textFill="WHITE">
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" stylesheets="@createAccount.css" text="新規作成" textAlignment="CENTER" textFill="WHITE">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
@@ -49,7 +49,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Label text="※パスワードをご確認ください" textFill="YELLOW" />
+                  <Label fx:id="warningMessage" textFill="YELLOW" />
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label alignment="BOTTOM_LEFT" text="または" textFill="WHITE">
@@ -63,7 +63,7 @@
                               <Insets top="5.0" />
                            </HBox.margin>
                         </Label>
-                        <Hyperlink styleClass="link" text="既存のアカウントを使用" textFill="#2ec4ff" />
+                        <Hyperlink onAction="#onExistingAccountLogin" styleClass="link" text="既存のアカウントを使用" textFill="#2ec4ff" />
                      </children>
                   </HBox>
                </children>
