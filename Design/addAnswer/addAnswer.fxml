@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@atuika.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@addAnswer.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@atuika.css">
+      <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@addAnswer.css">
          <top>
             <BorderPane prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #1B1464#1B1464;" BorderPane.alignment="CENTER">
                <right>
@@ -28,7 +28,7 @@
                   </Label>
                </right>
                <left>
-                  <Button graphicTextGap="3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" styleClass="modoru" stylesheets="@atuika.css" text="もどる" textFill="#1b1464" BorderPane.alignment="CENTER">
+                  <Button graphicTextGap="3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" styleClass="modoru" stylesheets="@addAnswer.css" text="もどる" textFill="#1b1464" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets left="30.0" top="20.0" />
                      </BorderPane.margin>
@@ -108,7 +108,7 @@
                                           <Insets bottom="20.0" left="10.0" right="20.0" />
                                        </GridPane.margin>
                                     </TextArea>
-                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@atuika.css" text="保存する" textFill="WHITE" GridPane.rowIndex="2">
+                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@addAnswer.css" text="保存する" textFill="WHITE" GridPane.rowIndex="2">
                                        <GridPane.margin>
                                           <Insets bottom="5.0" left="50.0" right="50.0" />
                                        </GridPane.margin>
