@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@editProblem1.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@editProblem1.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EditProblem">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@editProblem1.css">
          <top>
@@ -94,7 +94,7 @@
                                     <Insets left="10.0" right="20.0" />
                                  </GridPane.margin>
                               </Label>
-                              <TextField style="-fx-background-radius: 20px;" GridPane.rowIndex="1">
+                              <TextField fx:id="searchTitle" style="-fx-background-radius: 20px;" GridPane.rowIndex="1">
                                  <GridPane.margin>
                                     <Insets bottom="5.0" left="20.0" right="20.0" />
                                  </GridPane.margin>
@@ -107,7 +107,7 @@
                                     <Insets left="10.0" right="20.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="button2" stylesheets="@editProblem1.css" text="検索" textFill="WHITE" GridPane.rowIndex="4">
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#onSearch" prefHeight="50.0" prefWidth="200.0" styleClass="button2" stylesheets="@editProblem1.css" text="検索" textFill="WHITE" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
                                  </GridPane.margin>
@@ -115,7 +115,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Button>
-                              <ComboBox editable="true" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="3">
+                              <ComboBox fx:id="selectTag" editable="true" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets left="20.0" right="20.0" />
                                  </GridPane.margin>
@@ -139,7 +139,7 @@
                         <RowConstraints maxHeight="-Infinity" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" stylesheets="@editProblem1.css" text="編集" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#onEdit" prefHeight="50.0" prefWidth="190.0" stylesheets="@editProblem1.css" text="編集" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
                            <GridPane.margin>
                               <Insets bottom="40.0" left="50.0" right="60.0" top="10.0" />
                            </GridPane.margin>
@@ -147,7 +147,7 @@
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <ListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                        <ListView fx:id="problems" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
