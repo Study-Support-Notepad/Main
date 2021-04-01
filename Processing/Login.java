@@ -38,13 +38,14 @@ public class Login {
     void onLoginClick(ActionEvent event) throws Exception {
         // login完了したら
         if (true) {
-            mw.loginCompleted();
+            MainWindow.loginParts.setVisible(false);
+            MainWindow.menuBarParts.setVisible(true);
+            MainWindow.menuParts.setVisible(true);
         }
     }
 
     @FXML
     void createAccount(ActionEvent event) {
-
     }
 
     @FXML
