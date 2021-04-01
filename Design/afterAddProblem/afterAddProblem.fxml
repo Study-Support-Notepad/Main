@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@qireta.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@afterAddProblem.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@qireta.css">
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@afterAddProblem.css">
          <top>
-            <BorderPane prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #1B1464#1B1464;" styleClass="background" stylesheets="@qireta.css" BorderPane.alignment="CENTER">
+            <BorderPane prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #1B1464#1B1464;" styleClass="background" stylesheets="@afterAddProblem.css" BorderPane.alignment="CENTER">
                <right>
                   <Label text="Workbook" textFill="WHITE" BorderPane.alignment="CENTER">
                      <font>
@@ -26,7 +26,7 @@
                   </Label>
                </right>
                <left>
-                  <Button graphicTextGap="3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" styleClass="modoru" stylesheets="@qireta.css" text="もどる" textFill="#1b1464" BorderPane.alignment="CENTER">
+                  <Button graphicTextGap="3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" styleClass="modoru" stylesheets="@afterAddProblem.css" text="もどる" textFill="#1b1464" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets left="30.0" top="20.0" />
                      </BorderPane.margin>
@@ -89,7 +89,7 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button3" stylesheets="@qireta.css" text="メニューにもどる" textFill="#1b1464">
+                                    <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button3" stylesheets="@afterAddProblem.css" text="メニューにもどる" textFill="#1b1464">
                                        <GridPane.margin>
                                           <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                                        </GridPane.margin>

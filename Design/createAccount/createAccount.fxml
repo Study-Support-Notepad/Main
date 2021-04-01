@@ -15,9 +15,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@newaka.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane alignment="TOP_LEFT" styleClass="background" stylesheets="@createAccount.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@newaka.css">
+      <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@createAccount.css">
          <top>
             <BorderPane prefHeight="81.0" style="-fx-background-color: #1B1464#1B1464;" BorderPane.alignment="CENTER">
                <right>
@@ -117,7 +117,7 @@
                               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@newaka.css" text="作成" textFill="WHITE" GridPane.rowIndex="3">
+                              <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@createAccount.css" text="作成" textFill="WHITE" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets bottom="5.0" left="50.0" right="50.0" top="20.0" />
                                  </GridPane.margin>
