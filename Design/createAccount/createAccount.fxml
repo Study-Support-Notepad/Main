@@ -30,7 +30,7 @@
                   <Label text="Name" textFill="WHITE" />
                   <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" />
                   <Label text="Password" textFill="WHITE" />
-                  <TextField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password" />
+                  <PasswordField fx:id="passwordCheck1" prefHeight="27.0" prefWidth="223.0" promptText="New Password " />
                   <PasswordField fx:id="passwordCheck" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" />
                   <CheckBox mnemonicParsing="false" text="に同意" textFill="WHITE">
                      <graphic>
