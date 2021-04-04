@@ -33,7 +33,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Hyperlink>
-                  <CheckBox mnemonicParsing="false" text="ログインしたままにする" textFill="WHITE" />
+                  <CheckBox fx:id="onSaveLogin" mnemonicParsing="false" text="ログインしたままにする" textFill="WHITE" />
                   <Button fx:id="loginButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="49.0" prefWidth="223.0" text="Login" textAlignment="CENTER" textFill="WHITE">
                      <VBox.margin>
                         <Insets />
@@ -47,7 +47,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Hyperlink>
-                  <Label prefHeight="17.0" prefWidth="225.0" text="ログインに失敗しました" textFill="YELLOW" />
+                  <Label fx:id="warningTxt" prefHeight="17.0" prefWidth="225.0" textFill="YELLOW" />
                </children>
                <padding>
                   <Insets left="20.0" top="20.0" />
