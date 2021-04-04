@@ -2,3 +2,9 @@
     -fx-background-image: url("../images/loginlogo.png");
     -fx-background-size: cover;
   }
+.button{
+  -fx-background-color: #2EC4FF;
+  }
+.button:hover{
+-fx-background-color:#0C6CCC;
+}
