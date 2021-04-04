@@ -1,15 +1,22 @@
+.top {
+       -fx-background-image: url("../images/haikeisimple.png");
+        -fx-background-size: cover;
+  }
+
+
 .background {
-    -fx-background-color:#FFFEEB;
+       -fx-background-image: url("../images/haikei.png");
+        -fx-background-size: cover;
   }
 .frame{
-    -fx-border-color:#1B1464;
+    -fx-border-color:#14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
     -fx-background-color: #FFFFFF;
 }
 .qmemoframe{
-    -fx-border-color:#1B1464;
+    -fx-border-color:#14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
@@ -18,7 +25,7 @@
        -fx-background-repeat: no-repeat;
 }
 .amemoframe{
-    -fx-border-color:#1B1464;
+    -fx-border-color:#14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
@@ -27,7 +34,7 @@
     -fx-background-repeat: no-repeat;
 }
 .toku{
-    -fx-border-color:#1B1464;
+    -fx-border-color:#14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
@@ -36,7 +43,7 @@
         -fx-background-repeat: no-repeat;
 }
 .akaibu{
-    -fx-border-color:#1B1464;
+    -fx-border-color:#14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
@@ -46,12 +53,20 @@
 }
 .menubutton{
     -fx-background-radius:30px;
-    -fx-background-color:#1B1464;
+    -fx-background-color:#14A1AD;
 }
+.menubutton:hover{
+    -fx-background-color:#11838D;
+}
+
 .menubutton2{
     -fx-background-radius:30px;
     -fx-background-color:#2EC4FF;
 }
+.menubutton2:hover{
+    -fx-background-color:#1A96C7;
+}
+
 .modoru{
     -fx-background-color:#FFFFFF;
     -fx-background-radius:20px;
