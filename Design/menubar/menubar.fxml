@@ -2,15 +2,42 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane style="-fx-background-color: #1b1464#1b1464;" stylesheets="@menuBar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuBar">
+<StackPane style="-fx-background-color: #48FFE2#48FFE2;" stylesheets="@menuBar.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuBar">
    <children>
       <VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="120.0">
          <children>
-            <Button alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackToMenu" prefWidth="111.0" styleClass="menubutton" text="メニューに戻る" textFill="#1b1464">
+            <StackPane maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" styleClass="icon">
+               <children>
+                  <StackPane maxHeight="120.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0">
+                     <children>
+                        <StackPane maxHeight="120.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0" styleClass="icon">
+                           <children>
+                              <StackPane maxHeight="100.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0" styleClass="iconcover">
+                                 <StackPane.margin>
+                                    <Insets right="3.0" />
+                                 </StackPane.margin>
+                              </StackPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </StackPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </StackPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </StackPane>
+            <Button alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackToMenu" prefWidth="111.0" styleClass="menubutton" text="メニューに戻る" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
@@ -63,5 +90,19 @@
             <Insets top="50.0" />
          </padding>
       </VBox>
+      <Button alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="100.0" mnemonicParsing="false" onAction="#onBackToMenu" prefWidth="100.0" styleClass="menubutton" text="お問い合わせ" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <graphic>
+            <Pane prefHeight="30.0" prefWidth="30.0" styleClass="mail" />
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <StackPane.margin>
+            <Insets bottom="10.0" top="400.0" />
+         </StackPane.margin>
+      </Button>
    </children>
 </StackPane>
