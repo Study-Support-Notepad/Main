@@ -1,0 +1,71 @@
+.top {
+       -fx-background-image: url("../images/haikeisimple.png");
+        -fx-background-size: cover;
+  }
+
+
+.background {
+       -fx-background-image: url("../images/haikei.png");
+        -fx-background-size: cover;
+  }
+.frame{
+    -fx-border-color:#14A1AD;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-color: #FFFFFF;
+}
+.qmemoframe{
+    -fx-border-color:#14A1AD;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("../images/qmemo.png");
+   -fx-background-size: 100%;
+       -fx-background-repeat: no-repeat;
+}
+.amemoframe{
+    -fx-border-color:#14A1AD;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("../images/amemo.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+}
+.toku{
+    -fx-border-color:#14A1AD;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("../images/toku.png");
+    -fx-background-size: 100%;
+        -fx-background-repeat: no-repeat;
+}
+.akaibu{
+    -fx-border-color:#14A1AD;
+    -fx-border-width:6px;
+    -fx-background-radius:30px;
+    -fx-border-radius:30px;
+    -fx-background-image: url("../images/akaibu.png");
+   -fx-background-size: 100%;
+       -fx-background-repeat: no-repeat;
+}
+.menubutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#14A1AD;
+}
+.menubutton:hover{
+    -fx-background-color:#11838D;
+}
+
+
+.new{
+    -fx-background-radius:50%;
+    -fx-background-color:#14A1AD;
+    -fx-border-radius:50%;
+        -fx-border-color: white;
+}
+.new:hover{
+    -fx-background-color:#11838D;
+}

@@ -1,0 +1,11 @@
+.file{
+ -fx-background-image: url("../images/file.png");
+    -fx-background-size: cover;
+}
+.menubutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#14A1AD;
+}
+.menubutton:hover{
+    -fx-background-color:#11838D;
+}
