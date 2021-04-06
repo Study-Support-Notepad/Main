@@ -17,7 +17,7 @@
                      <children>
                         <StackPane maxHeight="120.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0" styleClass="icon">
                            <children>
-                              <StackPane maxHeight="100.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0" styleClass="iconcover">
+                              <StackPane fx:id="icon" maxHeight="100.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="120.0" styleClass="iconcover">
                                  <StackPane.margin>
                                     <Insets right="3.0" />
                                  </StackPane.margin>
@@ -95,7 +95,7 @@
             <Font size="11.0" />
          </font>
          <graphic>
-            <Pane prefHeight="30.0" prefWidth="30.0" styleClass="mail" />
+            <Pane fx:id="contact" prefHeight="30.0" prefWidth="30.0" styleClass="mail" />
          </graphic>
          <opaqueInsets>
             <Insets />
