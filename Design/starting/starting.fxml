@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@starting.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Login">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@starting.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Starting">
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-opacity: 0.8; -fx-background-color: white;">
          <children>
@@ -17,7 +17,7 @@
                <center>
                   <StackPane maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0" styleClass="startlogo" BorderPane.alignment="CENTER">
                      <children>
-                        <StackPane maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" styleClass="startwa">
+                        <StackPane fx:id="ring" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" styleClass="startwa">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
