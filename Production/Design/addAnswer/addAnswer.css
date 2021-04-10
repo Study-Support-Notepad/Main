@@ -1,12 +1,17 @@
+.top {
+       -fx-background-image: url("../images/haikeisimple.png");
+        -fx-background-size: cover;
+  }
 .background {
-    -fx-background-color:#D8FFFB;
+    -fx-background-image: url("../images/haikei.png");
+           -fx-background-size: cover;
   }
 .frame{
     -fx-border-color: #14A1AD;
     -fx-border-width:6px;
     -fx-background-radius:30px;
     -fx-border-radius:30px;
-    -fx-background-color: #FFFFFF;
+
 }
 
 .button{

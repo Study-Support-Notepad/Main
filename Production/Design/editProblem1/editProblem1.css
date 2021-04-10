@@ -1,5 +1,10 @@
+.top {
+       -fx-background-image: url("../images/haikeisimple.png");
+        -fx-background-size: cover;
+  }
 .background {
-    -fx-background-color:#FFFEEB;
+   -fx-background-image: url("../images/haikei.png");
+             -fx-background-size: cover;
   }
 .frame{
     -fx-border-color:#1B1464;
@@ -29,7 +34,7 @@
 }
 .button2{
     -fx-background-radius:30px;
-    -fx-background-color:#1b1464;
+    -fx-background-color:#14A1AD;
 }
 .button2:hover{
     -fx-background-radius:30px;
