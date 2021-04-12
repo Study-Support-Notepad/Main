@@ -20,6 +20,7 @@ compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
 dependencies {
+    compile 'io.github.typhon0:AnimateFX:1.2.2'
     compile 'org.lightsleep:lightsleep:3.2.0'
 
     implementation group: 'de.svenkubiak', name: 'jBCrypt', version: '0.4'
