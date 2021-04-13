@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
@@ -18,7 +19,7 @@
 
 <StackPane alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainMenu">
    <stylesheets>
-      <URL value="@login2.css" />
+      <URL value="@createAccount2.css" />
    </stylesheets>
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
@@ -37,11 +38,14 @@
               <rowConstraints>
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -51,20 +55,54 @@
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <Label text="Password" textFill="WHITE" GridPane.rowIndex="2" />
-                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="Password" GridPane.rowIndex="3">
+                  <Label text="Password" textFill="WHITE" GridPane.rowIndex="4" />
+                  <Label text="Name" textFill="WHITE" GridPane.rowIndex="2" />
+                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password " GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
                   </PasswordField>
-                  <Hyperlink onAction="#forgotPassword" prefHeight="3.0" prefWidth="184.0" text="パスワードを忘れた場合" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="4" />
-                  <CheckBox fx:id="saveLogin" mnemonicParsing="false" text="ログインしたままにする" textFill="WHITE" GridPane.rowIndex="5" />
-                  <Button fx:id="loginButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="49.0" prefWidth="223.0" styleClass="menubutton2" text="Login" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="6">
+                  <PasswordField fx:id="passwordCheck" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <CheckBox fx:id="termsCheck" mnemonicParsing="false" text="に同意" textFill="WHITE" GridPane.rowIndex="7">
+                     <graphic>
+                        <Hyperlink onAction="#onLink" styleClass="link" text="利用規約" textFill="#70fffa">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Hyperlink>
+                     </graphic>
+                  </CheckBox>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" styleClass="menubutton2" text="新規作成" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="8">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Hyperlink onAction="#createAccount" prefHeight="25.0" prefWidth="189.0" text="新規アカウントを作成" textFill="WHITE" GridPane.rowIndex="7" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="10">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" text="または" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Hyperlink onAction="#onExistingAccountLogin" styleClass="link" text="既存のアカウントを使用" textFill="#70fffa" />
+                     </children>
+                  </HBox>
+                  <Label textFill="YELLOW" GridPane.rowIndex="9" />
                </children>
                <BorderPane.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />

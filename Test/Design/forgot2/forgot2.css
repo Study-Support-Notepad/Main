@@ -18,14 +18,7 @@
     -fx-background-color:#1A96C7;
 }
 
-.modoru{
-    -fx-background-color:#FFFFFF;
-    -fx-background-radius:20px;
-}
-.modoru:hover{
-    -fx-background-color:FFFF00;
-    -fx-background-radius:20px;
-}
+
 .logo{
   -fx-background-image: url("../images/logoyoko.png");
         -fx-background-size: cover;
