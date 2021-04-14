@@ -32,12 +32,12 @@ public class Main extends Application {
         FXMLLoader loader2 = new FXMLLoader(getClass().getResource("mainWindow/mainWindow.fxml"));
         Parent root2 = loader2.load();
         Stage primaryStage2 = new Stage();
-        primaryStage2.setScene(new Scene(root2, 740, 458));
+        primaryStage2.setScene(new Scene(root2, 500, 550));
         primaryStage2.setResizable(true);
         Image icon2 = new Image("main/images/logo.png");
         primaryStage2.getIcons().add(icon2);
-        primaryStage2.setMinHeight(400);
-        primaryStage2.setMinWidth(600);
+        primaryStage2.setMinHeight(550);
+        primaryStage2.setMinWidth(500);
         this.primaryStage2 = primaryStage2;
         new FirstRun().start();
     }
