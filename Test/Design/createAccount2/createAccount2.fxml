@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainMenu">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateAccount">
    <stylesheets>
       <URL value="@createAccount2.css" />
    </stylesheets>
@@ -102,7 +102,7 @@
                         <Hyperlink onAction="#onExistingAccountLogin" styleClass="link" text="既存のアカウントを使用" textFill="#70fffa" />
                      </children>
                   </HBox>
-                  <Label textFill="YELLOW" GridPane.rowIndex="9" />
+                  <Label fx:id="warningTxt" textFill="YELLOW" GridPane.rowIndex="9" />
                </children>
                <BorderPane.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
