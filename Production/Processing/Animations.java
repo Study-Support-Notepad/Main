@@ -9,7 +9,13 @@ import javafx.util.Duration;
 
 public class Animations {
 
-
+    public static void atLogin(StackPane node) {
+        FadeOutLeft fo = new FadeOutLeft(node);
+        fo.setOnFinished(event -> {
+            SOP.closeLoginParts();
+        });
+        fo.play();
+    }
 
     public static void startingRotate(StackPane node) {
         RotateTransition animation = new RotateTransition(Duration.seconds(2.25), node);
