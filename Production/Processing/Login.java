@@ -62,6 +62,7 @@ public class Login {
 
     @FXML
     void initialize() {
+        loginButton.setCursor(Cursor.HAND);
     }
 
 }
