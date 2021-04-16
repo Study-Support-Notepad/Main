@@ -28,6 +28,16 @@ public class SOP {
         mw.mainWindow.getChildren().add(loginParts);
     }
 
+    public static void viewCreateAccountParts() {
+        closeLoginParts();
+        mw.mainWindow.getChildren().add(createAccountParts);
+    }
+
+    public static void viewForgotParts() {
+        closeLoginParts();
+        mw.mainWindow.getChildren().add(forgotParts);
+    }
+
     public static void closeLoginParts() {
         mw.mainWindow.getChildren().remove(createAccountParts);
         mw.mainWindow.getChildren().remove(forgotParts);
