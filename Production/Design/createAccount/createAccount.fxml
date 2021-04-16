@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
@@ -8,31 +9,70 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" stylesheets="@createAccount.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateAccount">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateAccount">
+   <stylesheets>
+      <URL value="@createAccount.css" />
+   </stylesheets>
    <children>
-      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
-         <StackPane.margin>
-            <Insets bottom="100.0" left="100.0" right="100.0" top="50.0" />
-         </StackPane.margin>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <BorderPane prefHeight="81.0" prefWidth="600.0" styleClass="top" BorderPane.alignment="CENTER">
+               <center>
+                  <Pane maxHeight="-Infinity" maxWidth="300.0" minHeight="-Infinity" minWidth="300.0" prefHeight="60.0" prefWidth="300.0" styleClass="logo" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </top>
          <center>
-            <VBox fillWidth="false" maxHeight="340.0" maxWidth="270.0" minHeight="340.0" minWidth="270.0" prefHeight="340.0" prefWidth="270.0" spacing="5.0" style="-fx-background-color: #808080;" stylesheets="@createAccount.css" BorderPane.alignment="CENTER">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #808080; -fx-opacity: 0.7;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
                   <Label text="Email" textFill="WHITE" />
-                  <TextField fx:id="email" prefHeight="27.0" prefWidth="223.0" promptText="Email" />
-                  <Label text="Name" textFill="WHITE" />
-                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" />
-                  <Label text="Password" textFill="WHITE" />
-                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password " />
-                  <PasswordField fx:id="passwordCheck" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" />
-                  <CheckBox fx:id="termsCheck" mnemonicParsing="false" text="に同意" textFill="WHITE">
+                  <TextField fx:id="email" prefHeight="27.0" prefWidth="223.0" promptText="Email" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Password" textFill="WHITE" GridPane.rowIndex="4" />
+                  <Label text="Name" textFill="WHITE" GridPane.rowIndex="2" />
+                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="223.0" promptText="New Password " GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="passwordCheck" prefHeight="27.0" prefWidth="223.0" promptText="New Password (確認)" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <CheckBox fx:id="termsCheck" mnemonicParsing="false" text="に同意" textFill="WHITE" GridPane.rowIndex="7">
                      <graphic>
                         <Hyperlink onAction="#onLink" styleClass="link" text="利用規約" textFill="#70fffa">
                            <font>
@@ -41,16 +81,12 @@
                         </Hyperlink>
                      </graphic>
                   </CheckBox>
-                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" stylesheets="@createAccount.css" text="新規作成" textAlignment="CENTER" textFill="WHITE">
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" styleClass="menubutton2" text="新規作成" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="8">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Label fx:id="warningMessage" textFill="YELLOW" />
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="10">
                      <children>
                         <Label alignment="BOTTOM_LEFT" text="または" textFill="WHITE">
                            <font>
@@ -63,17 +99,18 @@
                               <Insets top="5.0" />
                            </HBox.margin>
                         </Label>
-                        <Hyperlink onAction="#onExistingAccountLogin" styleClass="link" text="既存のアカウントを使用" textFill="#2ec4ff" />
+                        <Hyperlink onAction="#onExistingAccountLogin" styleClass="link" text="既存のアカウントを使用" textFill="#70fffa" />
                      </children>
                   </HBox>
+                  <Label fx:id="warningTxt" textFill="YELLOW" GridPane.rowIndex="9" />
                </children>
-               <padding>
-                  <Insets left="20.0" top="5.0" />
-               </padding>
                <BorderPane.margin>
-                  <Insets left="150.0" top="50.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </BorderPane.margin>
-            </VBox>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </GridPane>
          </center>
       </BorderPane>
    </children>

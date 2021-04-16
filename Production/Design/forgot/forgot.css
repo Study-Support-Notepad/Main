@@ -1,10 +1,25 @@
+.top {
+       -fx-background-image: url("../images/haikeisimple.png");
+        -fx-background-size: cover;
+  }
+
+
 .background {
-    -fx-background-image: url("../images/loginlogo.png");
-    -fx-background-size: cover;
+       -fx-background-image: url("../images/haikei.png");
+        -fx-background-size: cover;
   }
-.button{
-  -fx-background-color: #2EC4FF;
-  }
-.button:hover{
--fx-background-color:#0C6CCC;
+
+
+.menubutton2{
+    -fx-background-radius:30px;
+    -fx-background-color:#2EC4FF;
+}
+.menubutton2:hover{
+    -fx-background-color:#1A96C7;
+}
+
+
+.logo{
+  -fx-background-image: url("../images/logoyoko.png");
+        -fx-background-size: cover;
 }
