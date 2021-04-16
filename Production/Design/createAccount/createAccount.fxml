@@ -19,7 +19,7 @@
 
 <StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateAccount">
    <stylesheets>
-      <URL value="@createAccount2.css" />
+      <URL value="@createAccount.css" />
    </stylesheets>
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">

@@ -18,7 +18,7 @@
 
 <StackPane alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Login">
    <stylesheets>
-      <URL value="@login2.css" />
+      <URL value="@login.css" />
    </stylesheets>
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">

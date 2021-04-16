@@ -16,7 +16,7 @@
 
 <StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Forgot">
    <stylesheets>
-      <URL value="@forgot2.css" />
+      <URL value="@forgot.css" />
    </stylesheets>
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
