@@ -1,9 +1,11 @@
 package main;
 
 import animatefx.animation.FadeOutLeft;
+import animatefx.animation.Shake;
 import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
 import javafx.animation.TranslateTransition;
+import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
 
@@ -23,5 +25,10 @@ public class Animations {
         animation.setCycleCount(TranslateTransition.INDEFINITE);
         animation.setInterpolator(Interpolator.LINEAR);
         animation.play();
+    }
+
+    public static void failureLogin(Button node) {
+        Shake shake = new Shake(node);
+        shake.play();
     }
 }

@@ -18,16 +18,30 @@ public class SOP {
         this.mw = mw;
     }
 
-    public static void SessionLogin() throws Exception {
+    public static void viewMenu() {
         mw.menuBar.getChildren().add(menuBarParts);
         mw.addParts.getChildren().add(menuParts);
     }
 
-    public static void notSessionLogin() throws Exception {
+    public static void viewLoginParts() {
+        closeLoginParts();
         mw.mainWindow.getChildren().add(loginParts);
-        mw.mainWindow.getChildren().add(createAccountParts);
-        mw.mainWindow.getChildren().add(forgotParts);
-        createAccountParts.setVisible(false);
-        forgotParts.setVisible(false);
     }
+
+    public static void viewCreateAccountParts() {
+        closeLoginParts();
+        mw.mainWindow.getChildren().add(createAccountParts);
+    }
+
+    public static void viewForgotParts() {
+        closeLoginParts();
+        mw.mainWindow.getChildren().add(forgotParts);
+    }
+
+    public static void closeLoginParts() {
+        mw.mainWindow.getChildren().remove(createAccountParts);
+        mw.mainWindow.getChildren().remove(forgotParts);
+        mw.mainWindow.getChildren().remove(loginParts);
+    }
+
 }
