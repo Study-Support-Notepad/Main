@@ -51,13 +51,13 @@ public class Login {
     }
 
     @FXML
-    void createAccount(ActionEvent event) throws Exception {
+    void createAccount(ActionEvent event) {
+        SOP.viewCreateAccountParts();
     }
 
     @FXML
     void forgotPassword(ActionEvent event) {
-
-
+        SOP.viewForgotParts();
     }
 
     @FXML
