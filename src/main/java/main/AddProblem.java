@@ -35,10 +35,5 @@ public class AddProblem {
 
     @FXML
     void initialize() {
-        assert problem != null : "fx:id=\"problem\" was not injected: check your FXML file 'addProblem.fxml'.";
-        assert problemTitle != null : "fx:id=\"problemTitle\" was not injected: check your FXML file 'addProblem.fxml'.";
-        assert memo != null : "fx:id=\"memo\" was not injected: check your FXML file 'addProblem.fxml'.";
-        assert setTag != null : "fx:id=\"setTag\" was not injected: check your FXML file 'addProblem.fxml'.";
-
     }
 }
