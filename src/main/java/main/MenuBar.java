@@ -8,11 +8,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 
 public class MenuBar {
 
     @FXML
     private ResourceBundle resources;
+
+    @FXML
+    private StackPane icon;
 
     @FXML
     private URL location;
@@ -26,33 +31,39 @@ public class MenuBar {
     @FXML
     private Button tooltipHelp;
 
-    private final String helpUrl = "https://github.com/Study-Support-Notepad";
+    @FXML
+    private Pane contact;
+
+    private final String helpUrl = "https://github.com/Study-Support-Notepad"; // 今後Help文が記載されたサイトへのURLに変更する
 
     @FXML
     void onBackToMenu(ActionEvent event) {
-        if (!MainWindow.menuParts.isVisible()) {
-            MainWindow.allFalseVisible();
+        /*if (!MainWindow.menuParts.isVisible()) {
+            //MainWindow.allFalseVisible();
             MainWindow.menuBarParts.setVisible(true);
             MainWindow.menuParts.setVisible(true);
-        }
+        }*/
     }
 
+    // Help文記載のサイトに飛ぶ
     @FXML
     void onHelp(ActionEvent event) throws IOException {
         java.awt.Desktop.getDesktop().browse(URI.create(helpUrl));
     }
 
+    // ログアウト処理
     @FXML
     void onLogout(ActionEvent event) {
-        MainWindow.allFalseVisible();
-        MainWindow.loginParts.setVisible(true);
-
+        //MainWindow.allFalseVisible();
+        //MainWindow.loginParts.setVisible(true);
     }
 
+    // アカウント設定画面に飛ぶ
     @FXML
     void onSettings(ActionEvent event) {
     }
 
+    // tooltip(カーソルを合わせると浮き出てくる文字)設定用
     private void setTooltip() {
         Tooltip tpSettings = new Tooltip("設定");
         Tooltip tpLogout = new Tooltip("ログアウト");
@@ -65,6 +76,5 @@ public class MenuBar {
     @FXML
     void initialize() {
         setTooltip();
-
     }
 }
