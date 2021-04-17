@@ -35,10 +35,5 @@ public class AddAnswer {
 
     @FXML
     void initialize() {
-        assert onMenuOrAddProblemMove != null : "fx:id=\"onMenuOrAddProblemMove\" was not injected: check your FXML file 'addAnswer.fxml'.";
-        assert answer != null : "fx:id=\"answer\" was not injected: check your FXML file 'addAnswer.fxml'.";
-        assert memo != null : "fx:id=\"memo\" was not injected: check your FXML file 'addAnswer.fxml'.";
-        assert title != null : "fx:id=\"title\" was not injected: check your FXML file 'addAnswer.fxml'.";
-
     }
 }
