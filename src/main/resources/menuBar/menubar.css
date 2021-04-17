@@ -1,0 +1,66 @@
+.icon{
+     -fx-background-image: url("../images/defoicon.png");
+ -fx-background-size: 70%;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+}
+.iconcover{
+ -fx-background-image: url("../images/maruwaku.png");
+    -fx-background-size: cover;
+}
+.menubutton{
+        -fx-background-radius:30px;
+        -fx-background-color:#14A1AD;
+         }
+.menubutton:hover{
+        -fx-background-color:#11838D;
+         }
+.setteibutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconsettei.png");
+    -fx-background-size: 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.setteibutton:hover{
+    -fx-background-color:FFFF00;
+}
+.kousinbutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconkousin.png");
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.kousinbutton:hover{
+    -fx-background-color:FFFF00;
+}
+.helpbutton{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/iconhelp.png");
+    -fx-background-size: 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.helpbutton:hover{
+    -fx-background-color:FFFF00;
+}
+
+.otoiawase{
+        -fx-background-radius:30px;
+        -fx-background-color:#14A1AD;
+         }
+.menubutton:hover{
+        -fx-background-color:#11838D;
+         }
+.mail{
+    -fx-background-radius:30px;
+    -fx-background-color:#FFFFFF;
+    -fx-background-image: url("../images/mail.png");
+    -fx-background-size: 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
