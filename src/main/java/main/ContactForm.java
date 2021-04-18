@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
-public class contactForm {
+public class ContactForm {
 
     @FXML
     private Button onMenuOrAddProblemMove;
