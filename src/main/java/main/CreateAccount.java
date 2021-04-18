@@ -55,13 +55,5 @@ public class CreateAccount {
 
     @FXML
     void initialize() {
-        assert window != null : "fx:id=\"window\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert email != null : "fx:id=\"email\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert userName != null : "fx:id=\"userName\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert password != null : "fx:id=\"password\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert passwordCheck != null : "fx:id=\"passwordCheck\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert termsCheck != null : "fx:id=\"termsCheck\" was not injected: check your FXML file 'createAccount.fxml'.";
-        assert warningMessage != null : "fx:id=\"warningMessage\" was not injected: check your FXML file 'createAccount.fxml'.";
-
     }
 }
