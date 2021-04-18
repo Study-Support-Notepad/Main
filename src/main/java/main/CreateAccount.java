@@ -4,10 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 
 public class CreateAccount {
@@ -34,7 +31,7 @@ public class CreateAccount {
     private PasswordField passwordCheck;
 
     @FXML
-    private Hyperlink termsCheck;
+    private CheckBox termsCheck;
 
     @FXML
     private Label warningMessage;
