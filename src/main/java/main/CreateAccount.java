@@ -1,19 +1,15 @@
 package main;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
+import java.net.URI;
+import java.util.regex.Pattern;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 
 public class CreateAccount {
-
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
 
     @FXML
     private StackPane window;
@@ -25,7 +21,7 @@ public class CreateAccount {
     private TextField userName;
 
     @FXML
-    private TextField password;
+    private PasswordField password;
 
     @FXML
     private PasswordField passwordCheck;
@@ -34,20 +30,66 @@ public class CreateAccount {
     private CheckBox termsCheck;
 
     @FXML
-    private Label warningMessage;
+    private Label warningTxt;
+
+    private final String termsURL = "https://github.com/Study-Support-Notepad"; // 利用規約先URL
 
     @FXML
-    void onCreateAccount(ActionEvent event) {
+    void onCreateAccount(ActionEvent event) throws Exception { // 空白がないかどうか パスワードの文字列 既に存在しているアカウントかどうか
+        if (checkEmail(email.getText())) {
+            if (checkName(userName.getText())) {
+                if (checkPassword(password.getText())) {
+                    if (password.getText().equals(passwordCheck.getText())) {
+                        if (termsCheck.isSelected()) {
+                            /* if (アカウントがあるかどうか) {
+                                なければアカウントの作成
+                            } else {
+                                warningTxt.setText("既にアカウントが存在しています");
+                            }
+                             */
+                        } else {
+                            warningTxt.setText("利用規約に同意してください");
+                        }
+                    } else {
+                        warningTxt.setText("passwordが一致しません");
+                    }
+                } else {
+                    warningTxt.setText("passwordを正しく入力してください");
+                }
+            } else {
+                warningTxt.setText("名前を正しく入力してください");
+            }
+        } else {
+            warningTxt.setText("EmailAddressを正しく入力してください");
+        }
+    }
 
+    private boolean checkEmail(String txt) {
+        String pattern = "[a-zA-Z0-9.!#$%&’*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*";
+        Pattern p = Pattern.compile(pattern);
+        return p.matcher(txt).matches();
+    }
+
+    private boolean checkPassword(String txt) {
+        String pattern = "[0-9a-zA-Z!?]{8,50}+";
+        Pattern p = Pattern.compile(pattern);
+        return p.matcher(txt).matches();
+    }
+
+    private boolean checkName(String txt)  {
+        String pattern = "[0-9a-zA-Z]{3,20}+";
+        Pattern p = Pattern.compile(pattern);
+        return p.matcher(txt).matches();
     }
 
     @FXML
     void onExistingAccountLogin(ActionEvent event) {
-
+        SOP.viewLoginParts();
     }
 
     @FXML
-    void onLink(ActionEvent event) {
+    void onLink(ActionEvent event) throws IOException {
+        java.awt.Desktop.getDesktop().browse(URI.create(termsURL));
     }
 
     @FXML
