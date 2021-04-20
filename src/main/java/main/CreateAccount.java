@@ -32,6 +32,9 @@ public class CreateAccount {
     @FXML
     private Label warningTxt;
 
+    @FXML
+    private Button createButton;
+
     private final String termsURL = "https://github.com/Study-Support-Notepad"; // 利用規約先URL
 
     @FXML
