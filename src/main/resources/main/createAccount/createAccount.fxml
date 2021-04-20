@@ -81,7 +81,7 @@
                         </Hyperlink>
                      </graphic>
                   </CheckBox>
-                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" styleClass="menubutton2" text="新規作成" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="8">
+                  <Button fx:id="createButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="49.0" prefWidth="223.0" styleClass="menubutton2" text="新規作成" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="8">
                      <font>
                         <Font size="18.0" />
                      </font>
