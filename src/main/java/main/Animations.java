@@ -27,7 +27,7 @@ public class Animations {
         animation.play();
     }
 
-    public static void failureLogin(Button node) {
+    public static void failureLoginSystem(Button node) {
         Shake shake = new Shake(node);
         shake.play();
     }
