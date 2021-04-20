@@ -32,6 +32,9 @@ public class CreateAccount {
     @FXML
     private Label warningTxt;
 
+    @FXML
+    private Button createButton;
+
     private final String termsURL = "https://github.com/Study-Support-Notepad"; // 利用規約先URL
 
     @FXML
@@ -45,22 +48,28 @@ public class CreateAccount {
                                 なければアカウントの作成
                             } else {
                                 warningTxt.setText("既にアカウントが存在しています");
+                                Animations.failureLoginSystem(createButton);
                             }
                              */
                         } else {
                             warningTxt.setText("利用規約に同意してください");
+                            Animations.failureLoginSystem(createButton);
                         }
                     } else {
                         warningTxt.setText("passwordが一致しません");
+                        Animations.failureLoginSystem(createButton);
                     }
                 } else {
                     warningTxt.setText("passwordを正しく入力してください");
+                    Animations.failureLoginSystem(createButton);
                 }
             } else {
                 warningTxt.setText("名前を正しく入力してください");
+                Animations.failureLoginSystem(createButton);
             }
         } else {
             warningTxt.setText("EmailAddressを正しく入力してください");
+            Animations.failureLoginSystem(createButton);
         }
     }
 

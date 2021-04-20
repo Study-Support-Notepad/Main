@@ -36,11 +36,11 @@ public class Login {
                 }
             } else { // アカウントが存在しなければエラー表示
                 warningTxt.setText("アカウントが存在しません");
-                Animations.failureLogin(loginButton);
+                Animations.failureLoginSystem(loginButton);
             }
         } else { // 空白が入っていたらエラー表示
             warningTxt.setText("空白を入力することは出来ません");
-            Animations.failureLogin(loginButton);
+            Animations.failureLoginSystem(loginButton);
         }
     }
 
