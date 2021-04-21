@@ -46,6 +46,7 @@ public class CreateAccount {
                         if (termsCheck.isSelected()) {
                             /* if (アカウントがあるかどうか) {
                                 なければアカウントの作成
+                                Animations.atLoginSystem(SOP.createAccountParts);
                             } else {
                                 warningTxt.setText("既にアカウントが存在しています");
                                 Animations.failureLoginSystem(createButton);
