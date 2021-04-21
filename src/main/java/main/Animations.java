@@ -11,7 +11,7 @@ import javafx.util.Duration;
 
 public class Animations {
 
-    public static void atLogin(StackPane node) {
+    public static void atLoginSystem(StackPane node) {
         FadeOutLeft fo = new FadeOutLeft(node);
         fo.setOnFinished(event -> {
             SOP.closeLoginParts();

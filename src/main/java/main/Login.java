@@ -30,7 +30,7 @@ public class Login {
     void onLoginClick(ActionEvent event) throws Exception {
         if (!hasBlank(email.getText()) && !hasBlank(password.getText()) && !email.getText().equals("") && !password.getText().equals("")) { // 空白が入っていない and 文字が1文字以上入っているか
             if (API.accountExists(email.getText(), password.getText())) { // アカウントの確認
-                Animations.atLogin(SOP.loginParts);
+                Animations.atLoginSystem(SOP.loginParts);
                 if (saveLogin.isSelected()) {
                     API.setSession();
                 }
