@@ -41,6 +41,7 @@
                   <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Label text="Email" textFill="WHITE" GridPane.rowIndex="1" />
@@ -49,7 +50,7 @@
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="6" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7" />
                   <Label prefHeight="50.0" prefWidth="225.0" text=" こちらのメールアドレスに&#10;パスワードを送信します&#10;" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3">
                      <font>
                         <Font size="14.0" />
@@ -63,11 +64,19 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Hyperlink onAction="#onBackLoginScene" text="ログイン画面に戻る" textFill="#70fffa" GridPane.rowIndex="5">
+                  <Hyperlink onAction="#onBackLoginScene" text="ログイン画面に戻る" textFill="#70fffa" GridPane.rowIndex="6">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Hyperlink>
+                  <Label prefHeight="50.0" prefWidth="225.0" text="label&#10;" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
                </children>
                <BorderPane.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
