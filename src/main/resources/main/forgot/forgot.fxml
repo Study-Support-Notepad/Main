@@ -63,7 +63,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Hyperlink text="ログイン画面に戻る" textFill="#70fffa" GridPane.rowIndex="5">
+                  <Hyperlink onAction="#onBackLoginScene" text="ログイン画面に戻る" textFill="#70fffa" GridPane.rowIndex="5">
                      <font>
                         <Font size="18.0" />
                      </font>
