@@ -69,7 +69,7 @@
                         <Font size="18.0" />
                      </font>
                   </Hyperlink>
-                  <Label prefHeight="50.0" prefWidth="225.0" textAlignment="CENTER" textFill="#e5ff00" GridPane.rowIndex="5">
+                  <Label fx:id="warningTxt" prefHeight="50.0" prefWidth="225.0" textAlignment="CENTER" textFill="#e5ff00" GridPane.rowIndex="5">
                      <font>
                         <Font size="14.0" />
                      </font>

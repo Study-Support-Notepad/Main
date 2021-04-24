@@ -2,6 +2,7 @@ package main;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 
@@ -12,6 +13,9 @@ public class Forgot {
 
     @FXML
     private TextField email;
+
+    @FXML
+    private Label warningTxt;
 
     @FXML
     void onBackLoginScene(ActionEvent event) {
