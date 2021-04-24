@@ -19,7 +19,7 @@ public class Forgot {
 
     @FXML
     void onBackLoginScene(ActionEvent event) {
-
+        SOP.viewLoginParts();
     }
 
     @FXML
