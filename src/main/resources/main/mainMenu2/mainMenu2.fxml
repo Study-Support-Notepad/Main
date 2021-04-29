@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -14,7 +13,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainMenu">
+<StackPane fx:id="window" alignment="TOP_LEFT" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainMenu">
    <stylesheets>
       <URL value="@mainMenu2.css" />
    </stylesheets>
@@ -55,26 +54,26 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <TextField>
+                        <TextField fx:id="searchString">
                            <GridPane.margin>
                               <Insets left="20.0" right="10.0" />
                            </GridPane.margin>
                         </TextField>
-                        <Button mnemonicParsing="false" text="検索" GridPane.columnIndex="1">
+                        <Button mnemonicParsing="false" onAction="#onSearch" text="検索" GridPane.columnIndex="1">
                            <font>
                               <Font size="11.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="new" text="+" textFill="WHITE" GridPane.columnIndex="2">
+                        <Button mnemonicParsing="false" onAction="#onAddProblem" styleClass="new" text="+" textFill="WHITE" GridPane.columnIndex="2">
                            <font>
                               <Font name="System Bold" size="36.0" />
                            </font>
                         </Button>
                      </children>
                   </GridPane>
-                  <ScrollPane maxWidth="1.7976931348623157E308" prefHeight="339.0" prefWidth="506.0" style="-fx-opacity: 0%;" GridPane.rowIndex="1">
+                  <ScrollPane fx:id="scroll" maxWidth="1.7976931348623157E308" prefHeight="339.0" prefWidth="506.0" style="-fx-opacity: 0%;" GridPane.rowIndex="1">
                      <content>
-                        <GridPane prefHeight="0.0" prefWidth="0.0">
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
