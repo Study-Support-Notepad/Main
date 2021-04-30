@@ -72,7 +72,7 @@
                         </Button>
                      </children>
                   </GridPane>
-                  <ScrollPane fx:id="scroll" maxWidth="1.7976931348623157E308" prefHeight="339.0" prefWidth="506.0" style="-fx-opacity: 70%;" GridPane.rowIndex="1">
+                  <ScrollPane fx:id="scroll" maxWidth="1.7976931348623157E308" prefHeight="339.0" prefWidth="506.0" style="-fx-opacity: 70%;" styleClass="noframe" GridPane.rowIndex="1">
                      <content>
                         <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
                           <columnConstraints>

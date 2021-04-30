@@ -69,3 +69,7 @@
 .new:hover{
     -fx-background-color:#11838D;
 }
+.noframe{
+    -fx-background-color:transparent;
+    -fx-focus-color: transparent;
+}
