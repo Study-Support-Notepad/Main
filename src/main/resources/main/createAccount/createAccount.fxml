@@ -57,7 +57,7 @@
                   </TextField>
                   <Label text="Password" textFill="WHITE" GridPane.rowIndex="4" />
                   <Label text="Name" textFill="WHITE" GridPane.rowIndex="2" />
-                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User name" GridPane.rowIndex="3">
+                  <TextField fx:id="userName" prefHeight="27.0" prefWidth="223.0" promptText="User Name" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
